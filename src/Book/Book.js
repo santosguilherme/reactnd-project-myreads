@@ -5,7 +5,6 @@ import BookshelfChanger from '../Bookshelf/BookshelfChanger';
 
 import './Book.css';
 
-
 const Book = ({book}) => (
     <div className="book">
         <div className="book-top">
@@ -20,10 +19,8 @@ const Book = ({book}) => (
             {book.title}
         </div>
         <div className="book-authors">
-            {book.authors.map(author => (
-                <span key={author}>
-                                        {author}
-                                    </span>
+            {(book.authors || []).map(author => (
+                <span key={author}>{author}</span>
             ))}
         </div>
     </div>

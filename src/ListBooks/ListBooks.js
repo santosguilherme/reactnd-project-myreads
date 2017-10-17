@@ -2,8 +2,8 @@ import React, {Component} from 'react';
 
 import {Link} from 'react-router-dom';
 
-import Bookshelf from '../Bookshelf/Bookshelf';
 import * as BooksAPI from '../commons/services/BooksAPI';
+import Bookshelf from '../Bookshelf/Bookshelf';
 
 import './ListBooks.css';
 
