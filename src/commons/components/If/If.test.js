@@ -1,5 +1,6 @@
 import React from 'react';
 import {shallow} from 'enzyme';
+
 import If from './If';
 
 it('renders without crashing', () => {
