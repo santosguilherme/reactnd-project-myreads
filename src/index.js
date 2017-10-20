@@ -9,7 +9,7 @@ import registerServiceWorker from './registerServiceWorker';
 import './index.css';
 
 ReactDOM.render(
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <BrowserRouter>
         <App/>
     </BrowserRouter>,
     document.getElementById('root')

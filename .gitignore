@@ -7,7 +7,7 @@
 /coverage
 
 # production
-#for github pages /build
+/build
 
 # misc
 .idea
