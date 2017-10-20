@@ -1,8 +1,9 @@
 import React, {Component} from 'react';
+import PropTypes from 'prop-types';
 
 import {Link} from 'react-router-dom';
 
-import * as BooksAPI from '../commons/services/BooksAPI';
+import If from '../commons/components/If';
 import Book from '../Book/Book';
 
 import './SearchBooks.css';
@@ -10,31 +11,20 @@ import './SearchBooks.css';
 
 class SearchBooks extends Component {
     state = {
-        books: [],
         query: ''
     };
 
     handleChangeSearchInput = event => {
+        const {onSearchBooks} = this.props;
         const query = event.target.value;
 
         this.setState({query});
-
-        BooksAPI
-            .search(query)
-            .then(response => {
-                let books = response;
-
-                if (response.error) {
-                    // TODO - tratamento para quando não existir resultado
-                    books = [];
-                }
-
-                this.setState({books})
-            });
+        onSearchBooks(query);
     };
 
     render() {
-        const {books = [], query} = this.state;
+        const {query} = this.state;
+        const {onUpdateBook, message, booksResult = []} = this.props;
 
         return (
             <div className="search-books">
@@ -56,10 +46,16 @@ class SearchBooks extends Component {
                     </div>
                 </div>
                 <div className="search-books-results">
+                    <If test={message}>
+                        <p align="center">{message}</p>
+                    </If>
                     <ol className="books-grid">
-                        {books.map((book, index) => (
+                        {booksResult.map((book, index) => (
                             <li key={index}>
-                                <Book book={book}/>
+                                <Book
+                                    book={book}
+                                    onUpdateBook={onUpdateBook}
+                                />
                             </li>
                         ))}
                     </ol>
@@ -69,7 +65,15 @@ class SearchBooks extends Component {
     }
 }
 
-//FIXME
-SearchBooks.propTypes = {};
+SearchBooks.defaultProps = {
+    message: 'Enter the title or actor you want to search, in the field above.'
+};
+
+SearchBooks.propTypes = {
+    booksResult: PropTypes.array,
+    message: PropTypes.string,
+    onSearchBooks: PropTypes.func.isRequired,
+    onUpdateBook: PropTypes.func.isRequired
+};
 
 export default SearchBooks;

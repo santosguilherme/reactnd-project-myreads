@@ -1,46 +1,31 @@
 import React, {Component} from 'react';
+import PropTypes from 'prop-types';
 
 import {Link} from 'react-router-dom';
 
-import * as BooksAPI from '../commons/services/BooksAPI';
 import Bookshelf from '../Bookshelf/Bookshelf';
 
 import './ListBooks.css';
 
 
-class ListBooks extends Component {
-    state = {
-        /**
-         * TODO: Instead of using this state variable to keep track of which page
-         * we're on, use the URL in the browser's address bar. This will ensure that
-         * users can use the browser's back and forward buttons to navigate between
-         * pages, as well as provide a good URL they can bookmark and share.
-         */
-        books: [],
-        filters: [
-            {
-                type: 'currentlyReading',
-                label: 'Currently Reading'
-            },
-            {
-                type: 'wantToRead',
-                label: 'Want to Read'
-            },
-            {
-                type: 'read',
-                label: 'Read'
-            }
-        ]
-    };
-
-    componentDidMount() {
-        BooksAPI
-            .getAll()
-            .then(books => this.setState({books}));
+const listBooksFilters = [
+    {
+        type: 'currentlyReading',
+        label: 'Currently Reading'
+    },
+    {
+        type: 'wantToRead',
+        label: 'Want to Read'
+    },
+    {
+        type: 'read',
+        label: 'Read'
     }
+];
 
+class ListBooks extends Component {
     render() {
-        const {books, filters} = this.state;
+        const {books = [], onUpdateBook} = this.props;
 
         return (
             <div className="list-books">
@@ -48,13 +33,17 @@ class ListBooks extends Component {
                     <h1>MyReads</h1>
                 </div>
                 <div className="list-books-content">
-                    {filters.map(({type, label}) => (
-                        <Bookshelf
-                            key={type}
-                            title={label}
-                            books={books.filter(book => book.shelf === type)}
-                        />
-                    ))}
+                    {books.length
+                        ? listBooksFilters.map(({type, label}) => (
+                            <Bookshelf
+                                key={type}
+                                title={label}
+                                books={books.filter(book => book.shelf === type)}
+                                onUpdateBook={onUpdateBook}
+                            />
+                        ))
+                        : <p align="center">Loading books...</p>
+                    }
                 </div>
                 <div className="open-search">
                     <Link to="/search">
@@ -65,5 +54,14 @@ class ListBooks extends Component {
         );
     }
 }
+
+ListBooks.propTypes = {
+    books: PropTypes.arrayOf(
+        PropTypes.shape({
+            shelf: PropTypes.string.isRequired
+        })
+    ),
+    onUpdateBook: PropTypes.func.isRequired
+};
 
 export default ListBooks;

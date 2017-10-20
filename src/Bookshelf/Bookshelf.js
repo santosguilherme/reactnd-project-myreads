@@ -6,16 +6,19 @@ import Book from '../Book/Book';
 import './Bookshelf.css';
 
 
-const Bookshelf = ({title, books}) => (
+const Bookshelf = ({title, books, onUpdateBook}) => (
     <div className="bookshelf">
         <h2 className="bookshelf-title">
-            {title}
+            {`${title} (${books.length})`}
         </h2>
         <div className="bookshelf-books">
             <ol className="books-grid">
                 {books.map((book, index) => (
                     <li key={index}>
-                        <Book book={book}/>
+                        <Book
+                            book={book}
+                            onUpdateBook={onUpdateBook}
+                        />
                     </li>
                 ))}
             </ol>
@@ -23,11 +26,14 @@ const Bookshelf = ({title, books}) => (
     </div>
 );
 
-// TODO - validar o formato dos itens do array - talvez em um arquivo separado
-
 Bookshelf.propTypes = {
     title: PropTypes.string.isRequired,
-    books: PropTypes.array
+    books: PropTypes.arrayOf(
+        PropTypes.shape({
+            shelf: PropTypes.string.isRequired
+        })
+    ),
+    onUpdateBook: PropTypes.func.isRequired
 };
 
 export default Bookshelf;
