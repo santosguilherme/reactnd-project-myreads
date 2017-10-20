@@ -8,10 +8,12 @@ it('renders without crashing', () => {
     expect(wrapper).toMatchSnapshot();
 });
 
-it('testando o restante da condicional', () => {
-    shallow(
+it('Should render children when test property is true', () => {
+    const wrapper = shallow(
         <If test={true}>
             <span>Test</span>
         </If>
     );
+
+    expect(wrapper).toMatchSnapshot();
 });
