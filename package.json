@@ -2,7 +2,7 @@
   "name": "reactnd-project-myreads",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://santosguilherme.github.io/reactnd-project-myreads",
+  "homepage": "http://santosguilherme.github.io/reactnd-project-myreads/build/index.html",
   "dependencies": {
     "prop-types": "15.6.0",
     "react": "16.0.0",
