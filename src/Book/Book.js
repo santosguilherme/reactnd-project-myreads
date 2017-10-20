@@ -23,7 +23,7 @@ class Book extends Component {
         const bookCoverStyle = {width: 128, height: 193, backgroundColor: '#ccc'};
 
         if (imageLinks) {
-            bookCoverStyle.backgroundColor = '';
+            delete bookCoverStyle.backgroundColor;
             bookCoverStyle.backgroundImage = `url("${imageLinks.thumbnail}")`;
         }
 
