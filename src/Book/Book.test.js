@@ -10,7 +10,6 @@ it('renders without crashing', () => {
         authors: ['Santos, Guilherme']
     };
     const onUpdateBookMock = jest.fn();
-
     const wrapper = shallow(
         <Book
             book={bookMock}
@@ -28,7 +27,6 @@ it('Should call the onUpdateBook property when change bookshelf', () => {
         authors: ['Santos, Guilherme']
     };
     const onUpdateBookMock = jest.fn();
-
     const test = mount(
         <Book
             book={bookMock}
@@ -47,14 +45,12 @@ it('Should render the backgroundColor style property when book hasnt a imageLink
         authors: ['Santos, Guilherme']
     };
     const onUpdateBookMock = jest.fn();
-
     const test = mount(
         <Book
             book={bookMock}
             onUpdateBook={onUpdateBookMock}
         />
     );
-
     const bookCoverStyle = test.find('.book-cover').prop('style');
     const {backgroundImage, backgroundColor} = bookCoverStyle;
 
@@ -71,14 +67,12 @@ it('Should render the backgroundImage style property when book has a imageLink a
         imageLinks: {thumbnail}
     };
     const onUpdateBookMock = jest.fn();
-
     const test = mount(
         <Book
             book={bookMock}
             onUpdateBook={onUpdateBookMock}
         />
     );
-
     const bookCoverStyle = test.find('.book-cover').prop('style');
     const {backgroundImage, backgroundColor} = bookCoverStyle;
 

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import {Link} from 'react-router-dom';
 
-import If from '../commons/components/If';
+import If from '../commons/components/If/If';
 import Book from '../Book/Book';
 
 import './SearchBooks.css';

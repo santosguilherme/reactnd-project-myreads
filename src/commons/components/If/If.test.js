@@ -3,7 +3,9 @@ import {shallow} from 'enzyme';
 import If from './If';
 
 it('renders without crashing', () => {
-    shallow(<If/>);
+    const wrapper = shallow(<If/>);
+
+    expect(wrapper).toMatchSnapshot();
 });
 
 it('testando o restante da condicional', () => {

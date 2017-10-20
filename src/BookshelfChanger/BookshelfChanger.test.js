@@ -5,8 +5,9 @@ import BookshelfChanger from './BookshelfChanger';
 
 it('renders without crashing', () => {
     const onChangeOptionMock = jest.fn();
+    const wrapper = shallow(<BookshelfChanger onChangeOption={onChangeOptionMock}/>);
 
-    shallow(<BookshelfChanger onChangeOption={onChangeOptionMock}/>);
+    expect(wrapper).toMatchSnapshot();
 });
 
 it('Should call the onChangeOption property when change selected option', () => {
