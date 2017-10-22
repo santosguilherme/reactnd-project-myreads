@@ -6,6 +6,7 @@ ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <BookshelfChanger
     onChangeOption={[Function]}
+    shelf="none"
 />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -21,7 +22,7 @@ ShallowWrapper {
     "props": Object {
       "children": <select
         onChange={[Function]}
-        value={undefined}
+        value="none"
 >
         <option
                 disabled={true}
@@ -65,21 +66,23 @@ ShallowWrapper {
 >
             Move to...
 </option>,
-          <option
-            value="currentlyReading"
+          Array [
+            <option
+              value="currentlyReading"
 >
-            Currently Reading
+              Currently Reading
 </option>,
-          <option
-            value="wantToRead"
+            <option
+              value="wantToRead"
 >
-            Want to Read
+              Want to Read
 </option>,
-          <option
-            value="read"
+            <option
+              value="read"
 >
-            Read
+              Read
 </option>,
+          ],
           <option
             value="none"
 >
@@ -87,7 +90,7 @@ ShallowWrapper {
 </option>,
         ],
         "onChange": [Function],
-        "value": undefined,
+        "value": "none",
       },
       "ref": null,
       "rendered": Array [
@@ -106,7 +109,7 @@ ShallowWrapper {
         },
         Object {
           "instance": null,
-          "key": null,
+          "key": "currentlyReading",
           "nodeType": "host",
           "props": Object {
             "children": "Currently Reading",
@@ -118,7 +121,7 @@ ShallowWrapper {
         },
         Object {
           "instance": null,
-          "key": null,
+          "key": "wantToRead",
           "nodeType": "host",
           "props": Object {
             "children": "Want to Read",
@@ -130,7 +133,7 @@ ShallowWrapper {
         },
         Object {
           "instance": null,
-          "key": null,
+          "key": "read",
           "nodeType": "host",
           "props": Object {
             "children": "Read",
@@ -165,7 +168,7 @@ ShallowWrapper {
       "props": Object {
         "children": <select
           onChange={[Function]}
-          value={undefined}
+          value="none"
 >
           <option
                     disabled={true}
@@ -209,21 +212,23 @@ ShallowWrapper {
 >
               Move to...
 </option>,
-            <option
-              value="currentlyReading"
+            Array [
+              <option
+                value="currentlyReading"
 >
-              Currently Reading
+                Currently Reading
 </option>,
-            <option
-              value="wantToRead"
+              <option
+                value="wantToRead"
 >
-              Want to Read
+                Want to Read
 </option>,
-            <option
-              value="read"
+              <option
+                value="read"
 >
-              Read
+                Read
 </option>,
+            ],
             <option
               value="none"
 >
@@ -231,7 +236,7 @@ ShallowWrapper {
 </option>,
           ],
           "onChange": [Function],
-          "value": undefined,
+          "value": "none",
         },
         "ref": null,
         "rendered": Array [
@@ -250,7 +255,7 @@ ShallowWrapper {
           },
           Object {
             "instance": null,
-            "key": null,
+            "key": "currentlyReading",
             "nodeType": "host",
             "props": Object {
               "children": "Currently Reading",
@@ -262,7 +267,7 @@ ShallowWrapper {
           },
           Object {
             "instance": null,
-            "key": null,
+            "key": "wantToRead",
             "nodeType": "host",
             "props": Object {
               "children": "Want to Read",
@@ -274,7 +279,7 @@ ShallowWrapper {
           },
           Object {
             "instance": null,
-            "key": null,
+            "key": "read",
             "nodeType": "host",
             "props": Object {
               "children": "Read",

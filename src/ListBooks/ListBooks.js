@@ -3,25 +3,11 @@ import PropTypes from 'prop-types';
 
 import {Link} from 'react-router-dom';
 
+import shelves from '../commons/shelves';
 import Bookshelf from '../Bookshelf/Bookshelf';
 
 import './ListBooks.css';
 
-
-const listBooksFilters = [
-    {
-        type: 'currentlyReading',
-        label: 'Currently Reading'
-    },
-    {
-        type: 'wantToRead',
-        label: 'Want to Read'
-    },
-    {
-        type: 'read',
-        label: 'Read'
-    }
-];
 
 class ListBooks extends Component {
     render() {
@@ -34,7 +20,7 @@ class ListBooks extends Component {
                 </div>
                 <div className="list-books-content">
                     {books.length
-                        ? listBooksFilters.map(({type, label}) => (
+                        ? shelves.map(({type, label}) => (
                             <Bookshelf
                                 key={type}
                                 title={label}

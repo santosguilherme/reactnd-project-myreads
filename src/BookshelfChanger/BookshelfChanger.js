@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 
+import shelves from '../commons/shelves';
+
 import './BookshelfChanger.css';
 
 
@@ -20,16 +22,24 @@ class BookshelfChanger extends Component {
                     onChange={this.handleChangeSelect}
                 >
                     <option value="none" disabled>Move to...</option>
-                    <option value="currentlyReading">Currently Reading
-                    </option>
-                    <option value="wantToRead">Want to Read</option>
-                    <option value="read">Read</option>
+                    {shelves.map(shelf => (
+                        <option
+                            key={shelf.type}
+                            value={shelf.type}
+                        >
+                            {shelf.label}
+                        </option>
+                    ))}
                     <option value="none">None</option>
                 </select>
             </div>
         );
     }
 }
+
+BookshelfChanger.defaultProps = {
+    shelf: 'none'
+};
 
 BookshelfChanger.propTypes = {
     shelf: PropTypes.string,
