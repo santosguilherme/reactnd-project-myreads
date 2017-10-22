@@ -76,8 +76,7 @@ class App extends React.Component {
 
                 if (booksResult && Array.isArray(booksResult)) {
                     booksResult = booksResult.map(book => {
-                        const storagedBook = books.find(storagedBook => storagedBook.id === book.id);
-                        return storagedBook || book;
+                        return books.find(storagedBook => storagedBook.id === book.id) || book;
                     });
                 }
 

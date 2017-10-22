@@ -4,6 +4,6 @@ import App from './App';
 
 
 it('renders without crashing', () => {
-    // TODO - mock fetch
+    // TODO: mock fetch
     //expect(shallow(<App/>));
 });
