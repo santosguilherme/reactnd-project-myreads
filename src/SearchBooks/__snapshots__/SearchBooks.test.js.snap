@@ -1,0 +1,1003 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders with empty array 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <SearchBooks
+    booksResult={Array []}
+    message=""
+    onSearchBooks={[Function]}
+    onUpdateBook={[Function]}
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": null,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="search-books-bar"
+>
+          <Link
+                    className="close-search"
+                    replace={false}
+                    to="/"
+          >
+                    Close
+          </Link>
+          <div
+                    className="search-books-input-wrapper"
+          >
+                    <input
+                              autoFocus={true}
+                              onChange={[Function]}
+                              placeholder="Search by title or author"
+                              type="text"
+                              value=""
+                    />
+          </div>
+</div>,
+        <div
+          className="search-books-results"
+>
+          <If
+                    test=""
+          >
+                    <p
+                              align="center"
+                    />
+          </If>
+          <ol
+                    className="books-grid"
+          >
+                    
+          </ol>
+</div>,
+      ],
+      "className": "search-books",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": null,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <Link
+              className="close-search"
+              replace={false}
+              to="/"
+>
+              Close
+</Link>,
+            <div
+              className="search-books-input-wrapper"
+>
+              <input
+                            autoFocus={true}
+                            onChange={[Function]}
+                            placeholder="Search by title or author"
+                            type="text"
+                            value=""
+              />
+</div>,
+          ],
+          "className": "search-books-bar",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": null,
+            "nodeType": "class",
+            "props": Object {
+              "children": "Close",
+              "className": "close-search",
+              "replace": false,
+              "to": "/",
+            },
+            "ref": null,
+            "rendered": "Close",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": null,
+            "nodeType": "host",
+            "props": Object {
+              "children": <input
+                autoFocus={true}
+                onChange={[Function]}
+                placeholder="Search by title or author"
+                type="text"
+                value=""
+/>,
+              "className": "search-books-input-wrapper",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": null,
+              "nodeType": "host",
+              "props": Object {
+                "autoFocus": true,
+                "onChange": [Function],
+                "placeholder": "Search by title or author",
+                "type": "text",
+                "value": "",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "input",
+            },
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": null,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <If
+              test=""
+>
+              <p
+                            align="center"
+              />
+</If>,
+            <ol
+              className="books-grid"
+>
+              
+</ol>,
+          ],
+          "className": "search-books-results",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": null,
+            "nodeType": "function",
+            "props": Object {
+              "children": <p
+                align="center"
+/>,
+              "test": "",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": null,
+              "nodeType": "host",
+              "props": Object {
+                "align": "center",
+                "children": "",
+              },
+              "ref": null,
+              "rendered": "",
+              "type": "p",
+            },
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": null,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [],
+              "className": "books-grid",
+            },
+            "ref": null,
+            "rendered": Array [],
+            "type": "ol",
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": null,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="search-books-bar"
+>
+            <Link
+                        className="close-search"
+                        replace={false}
+                        to="/"
+            >
+                        Close
+            </Link>
+            <div
+                        className="search-books-input-wrapper"
+            >
+                        <input
+                                    autoFocus={true}
+                                    onChange={[Function]}
+                                    placeholder="Search by title or author"
+                                    type="text"
+                                    value=""
+                        />
+            </div>
+</div>,
+          <div
+            className="search-books-results"
+>
+            <If
+                        test=""
+            >
+                        <p
+                                    align="center"
+                        />
+            </If>
+            <ol
+                        className="books-grid"
+            >
+                        
+            </ol>
+</div>,
+        ],
+        "className": "search-books",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": null,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <Link
+                className="close-search"
+                replace={false}
+                to="/"
+>
+                Close
+</Link>,
+              <div
+                className="search-books-input-wrapper"
+>
+                <input
+                                autoFocus={true}
+                                onChange={[Function]}
+                                placeholder="Search by title or author"
+                                type="text"
+                                value=""
+                />
+</div>,
+            ],
+            "className": "search-books-bar",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": null,
+              "nodeType": "class",
+              "props": Object {
+                "children": "Close",
+                "className": "close-search",
+                "replace": false,
+                "to": "/",
+              },
+              "ref": null,
+              "rendered": "Close",
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": null,
+              "nodeType": "host",
+              "props": Object {
+                "children": <input
+                  autoFocus={true}
+                  onChange={[Function]}
+                  placeholder="Search by title or author"
+                  type="text"
+                  value=""
+/>,
+                "className": "search-books-input-wrapper",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": null,
+                "nodeType": "host",
+                "props": Object {
+                  "autoFocus": true,
+                  "onChange": [Function],
+                  "placeholder": "Search by title or author",
+                  "type": "text",
+                  "value": "",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "input",
+              },
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": null,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <If
+                test=""
+>
+                <p
+                                align="center"
+                />
+</If>,
+              <ol
+                className="books-grid"
+>
+                
+</ol>,
+            ],
+            "className": "search-books-results",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": null,
+              "nodeType": "function",
+              "props": Object {
+                "children": <p
+                  align="center"
+/>,
+                "test": "",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": null,
+                "nodeType": "host",
+                "props": Object {
+                  "align": "center",
+                  "children": "",
+                },
+                "ref": null,
+                "rendered": "",
+                "type": "p",
+              },
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": null,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [],
+                "className": "books-grid",
+              },
+              "ref": null,
+              "rendered": Array [],
+              "type": "ol",
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`renders without crashing 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <SearchBooks
+    booksResult={
+        Array [
+            Object {
+              "authors": Array [
+                "Santos, Guilherme",
+              ],
+              "shelf": "read",
+              "title": "My Book",
+            },
+          ]
+    }
+    message=""
+    onSearchBooks={[Function]}
+    onUpdateBook={[Function]}
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": null,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="search-books-bar"
+>
+          <Link
+                    className="close-search"
+                    replace={false}
+                    to="/"
+          >
+                    Close
+          </Link>
+          <div
+                    className="search-books-input-wrapper"
+          >
+                    <input
+                              autoFocus={true}
+                              onChange={[Function]}
+                              placeholder="Search by title or author"
+                              type="text"
+                              value=""
+                    />
+          </div>
+</div>,
+        <div
+          className="search-books-results"
+>
+          <If
+                    test=""
+          >
+                    <p
+                              align="center"
+                    />
+          </If>
+          <ol
+                    className="books-grid"
+          >
+                    <li>
+                              <Book
+                                        book={
+                                                  Object {
+                                                            "authors": Array [
+                                                              "Santos, Guilherme",
+                                                            ],
+                                                            "shelf": "read",
+                                                            "title": "My Book",
+                                                          }
+                                        }
+                                        onUpdateBook={[Function]}
+                              />
+                    </li>
+          </ol>
+</div>,
+      ],
+      "className": "search-books",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": null,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <Link
+              className="close-search"
+              replace={false}
+              to="/"
+>
+              Close
+</Link>,
+            <div
+              className="search-books-input-wrapper"
+>
+              <input
+                            autoFocus={true}
+                            onChange={[Function]}
+                            placeholder="Search by title or author"
+                            type="text"
+                            value=""
+              />
+</div>,
+          ],
+          "className": "search-books-bar",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": null,
+            "nodeType": "class",
+            "props": Object {
+              "children": "Close",
+              "className": "close-search",
+              "replace": false,
+              "to": "/",
+            },
+            "ref": null,
+            "rendered": "Close",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": null,
+            "nodeType": "host",
+            "props": Object {
+              "children": <input
+                autoFocus={true}
+                onChange={[Function]}
+                placeholder="Search by title or author"
+                type="text"
+                value=""
+/>,
+              "className": "search-books-input-wrapper",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": null,
+              "nodeType": "host",
+              "props": Object {
+                "autoFocus": true,
+                "onChange": [Function],
+                "placeholder": "Search by title or author",
+                "type": "text",
+                "value": "",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "input",
+            },
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": null,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <If
+              test=""
+>
+              <p
+                            align="center"
+              />
+</If>,
+            <ol
+              className="books-grid"
+>
+              <li>
+                            <Book
+                                          book={
+                                                        Object {
+                                                                      "authors": Array [
+                                                                        "Santos, Guilherme",
+                                                                      ],
+                                                                      "shelf": "read",
+                                                                      "title": "My Book",
+                                                                    }
+                                          }
+                                          onUpdateBook={[Function]}
+                            />
+              </li>
+</ol>,
+          ],
+          "className": "search-books-results",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": null,
+            "nodeType": "function",
+            "props": Object {
+              "children": <p
+                align="center"
+/>,
+              "test": "",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": null,
+              "nodeType": "host",
+              "props": Object {
+                "align": "center",
+                "children": "",
+              },
+              "ref": null,
+              "rendered": "",
+              "type": "p",
+            },
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": null,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <li>
+                  <Book
+                                    book={
+                                                      Object {
+                                                                        "authors": Array [
+                                                                          "Santos, Guilherme",
+                                                                        ],
+                                                                        "shelf": "read",
+                                                                        "title": "My Book",
+                                                                      }
+                                    }
+                                    onUpdateBook={[Function]}
+                  />
+</li>,
+              ],
+              "className": "books-grid",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": "0",
+                "nodeType": "host",
+                "props": Object {
+                  "children": <Book
+                    book={
+                                        Object {
+                                                            "authors": Array [
+                                                              "Santos, Guilherme",
+                                                            ],
+                                                            "shelf": "read",
+                                                            "title": "My Book",
+                                                          }
+                    }
+                    onUpdateBook={[Function]}
+/>,
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": null,
+                  "nodeType": "class",
+                  "props": Object {
+                    "book": Object {
+                      "authors": Array [
+                        "Santos, Guilherme",
+                      ],
+                      "shelf": "read",
+                      "title": "My Book",
+                    },
+                    "onUpdateBook": [Function],
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                "type": "li",
+              },
+            ],
+            "type": "ol",
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": null,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="search-books-bar"
+>
+            <Link
+                        className="close-search"
+                        replace={false}
+                        to="/"
+            >
+                        Close
+            </Link>
+            <div
+                        className="search-books-input-wrapper"
+            >
+                        <input
+                                    autoFocus={true}
+                                    onChange={[Function]}
+                                    placeholder="Search by title or author"
+                                    type="text"
+                                    value=""
+                        />
+            </div>
+</div>,
+          <div
+            className="search-books-results"
+>
+            <If
+                        test=""
+            >
+                        <p
+                                    align="center"
+                        />
+            </If>
+            <ol
+                        className="books-grid"
+            >
+                        <li>
+                                    <Book
+                                                book={
+                                                            Object {
+                                                                        "authors": Array [
+                                                                          "Santos, Guilherme",
+                                                                        ],
+                                                                        "shelf": "read",
+                                                                        "title": "My Book",
+                                                                      }
+                                                }
+                                                onUpdateBook={[Function]}
+                                    />
+                        </li>
+            </ol>
+</div>,
+        ],
+        "className": "search-books",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": null,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <Link
+                className="close-search"
+                replace={false}
+                to="/"
+>
+                Close
+</Link>,
+              <div
+                className="search-books-input-wrapper"
+>
+                <input
+                                autoFocus={true}
+                                onChange={[Function]}
+                                placeholder="Search by title or author"
+                                type="text"
+                                value=""
+                />
+</div>,
+            ],
+            "className": "search-books-bar",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": null,
+              "nodeType": "class",
+              "props": Object {
+                "children": "Close",
+                "className": "close-search",
+                "replace": false,
+                "to": "/",
+              },
+              "ref": null,
+              "rendered": "Close",
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": null,
+              "nodeType": "host",
+              "props": Object {
+                "children": <input
+                  autoFocus={true}
+                  onChange={[Function]}
+                  placeholder="Search by title or author"
+                  type="text"
+                  value=""
+/>,
+                "className": "search-books-input-wrapper",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": null,
+                "nodeType": "host",
+                "props": Object {
+                  "autoFocus": true,
+                  "onChange": [Function],
+                  "placeholder": "Search by title or author",
+                  "type": "text",
+                  "value": "",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "input",
+              },
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": null,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <If
+                test=""
+>
+                <p
+                                align="center"
+                />
+</If>,
+              <ol
+                className="books-grid"
+>
+                <li>
+                                <Book
+                                                book={
+                                                                Object {
+                                                                                "authors": Array [
+                                                                                  "Santos, Guilherme",
+                                                                                ],
+                                                                                "shelf": "read",
+                                                                                "title": "My Book",
+                                                                              }
+                                                }
+                                                onUpdateBook={[Function]}
+                                />
+                </li>
+</ol>,
+            ],
+            "className": "search-books-results",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": null,
+              "nodeType": "function",
+              "props": Object {
+                "children": <p
+                  align="center"
+/>,
+                "test": "",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": null,
+                "nodeType": "host",
+                "props": Object {
+                  "align": "center",
+                  "children": "",
+                },
+                "ref": null,
+                "rendered": "",
+                "type": "p",
+              },
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": null,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <li>
+                    <Book
+                                        book={
+                                                            Object {
+                                                                                "authors": Array [
+                                                                                  "Santos, Guilherme",
+                                                                                ],
+                                                                                "shelf": "read",
+                                                                                "title": "My Book",
+                                                                              }
+                                        }
+                                        onUpdateBook={[Function]}
+                    />
+</li>,
+                ],
+                "className": "books-grid",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": "0",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <Book
+                      book={
+                                            Object {
+                                                                  "authors": Array [
+                                                                    "Santos, Guilherme",
+                                                                  ],
+                                                                  "shelf": "read",
+                                                                  "title": "My Book",
+                                                                }
+                      }
+                      onUpdateBook={[Function]}
+/>,
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": null,
+                    "nodeType": "class",
+                    "props": Object {
+                      "book": Object {
+                        "authors": Array [
+                          "Santos, Guilherme",
+                        ],
+                        "shelf": "read",
+                        "title": "My Book",
+                      },
+                      "onUpdateBook": [Function],
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                  "type": "li",
+                },
+              ],
+              "type": "ol",
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
