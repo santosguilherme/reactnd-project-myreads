@@ -11,7 +11,7 @@ class App extends React.Component {
     state = {
         books: [],
         booksResult: [],
-        searchMessage: ''
+        searchMessage: undefined
     };
 
     componentDidMount() {
@@ -59,7 +59,7 @@ class App extends React.Component {
 
     handleSearchBooks = query => {
         if (!query) {
-            this.setState({booksResult: [], searchMessage: ''});
+            this.setState({booksResult: [], searchMessage: undefined});
             return;
         }
 
@@ -82,6 +82,10 @@ class App extends React.Component {
 
                 this.setState({booksResult, searchMessage: ''});
             });
+    };
+
+    handleClearBooksResult = () => {
+        this.setState({booksResult: [], searchMessage: undefined});
     };
 
     render() {
@@ -108,6 +112,7 @@ class App extends React.Component {
                             message={searchMessage}
                             onSearchBooks={this.handleSearchBooks}
                             onUpdateBook={this.handleUpdateBook}
+                            clearBooksResult={this.handleClearBooksResult}
                         />
                     )}
                 />
