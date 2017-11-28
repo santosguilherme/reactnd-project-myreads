@@ -2,7 +2,6 @@
   "name": "reactnd-project-myreads",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://santosguilherme.github.io/reactnd-project-myreads",
   "dependencies": {
     "babel-polyfill": "6.26.0",
     "prop-types": "15.6.0",
@@ -15,12 +14,9 @@
     "enzyme": "3.1.0",
     "enzyme-adapter-react-16": "1.0.2",
     "react-scripts": "1.0.14",
-    "react-test-renderer": "16.0.0",
-    "gh-pages": "1.1.0"
+    "react-test-renderer": "16.0.0"
   },
   "scripts": {
-    "predeploy": "rm -rf node_modules/gh-pages/.cache && npm run build",
-    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
